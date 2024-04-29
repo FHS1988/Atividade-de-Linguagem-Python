@@ -1,0 +1,20 @@
+altura = float(input("Entre com o valor da altura: "))
+peso = float(input("Entre com o valor do peso: "))
+
+imc = peso / (altura * altura)
+if imc < 16:
+print("Seu IMC é: {:.2f}. Você está abaixo do peso mínimo, muito grave!".format(imc))
+elif imc > 16 and imc < 16.99 :
+print("Seu IMC é: {:.2f}. Você está abaixo do peso, grave!".format(imc))
+elif imc > 17 and imc < 18.49 :
+print("Seu IMC é: {:.2f}. Você está abaixo do peso.".format(imc))
+elif imc > 18.50 and imc < 24.99 :
+print("Seu IMC é: {:.2f}. Seu peso está normal.".format(imc))
+elif imc > 25 and imc < 29.99 :
+print("Seu IMC é: {:.2f}. Você está com sobrepeso.".format(imc))
+elif imc > 30 and imc < 34.99 :
+print("Seu IMC é: {:.2f}. Você está com obesidade grau I.".format(imc))
+elif imc > 35 and imc < 39.99 :
+print("Seu IMC é: {:.2f}. Você está com obesidade grau II.".format(imc))
+else :
+print("Seu IMC é: {:.2f}. Você está com obesidade grau III (obesidade mórbida).".format(imc))
