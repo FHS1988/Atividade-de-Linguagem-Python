@@ -1,0 +1,23 @@
+
+nota1 = float(input("Entre com a primeira nota: "))
+
+nota2 = float(input("Entre com a segunda nota: "))
+
+soma = nota1 + nota2
+media = soma / 2
+
+if media >= 9.0 and media <= 10.0:
+
+print("Você tirou A coma média: {}, Aprovado!".format(media))
+elif media >= 7.5 and media <= 8.9:
+
+print("Você tirou B coma média: {}, Aprovado! Quase chegou lá.".format(media))
+elif media >= 6.0 and media <= 7.4:
+
+print("Você tirou C coma média: {}, Aprovado e pode melhorar.".format(media))
+elif media >= 4.0 and media <= 5.9:
+
+print("Você tirou D coma média: {}, Reprovado! Se empenhe mais".format(media))    
+else:
+
+print("Você tirou a média {} e é abaixo do esperado portanto está rprovado!".format(media))
