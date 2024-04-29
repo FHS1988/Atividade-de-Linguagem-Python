@@ -1,0 +1,14 @@
+
+salario = float(input('Digite o salário: '))
+
+aumento = int(input('Digite a porcentagem de aumento: '))
+
+conta = float
+
+salario_novo = float
+
+conta = aumento / 100 + 1
+
+salario_novo = salario * conta
+
+print ("Seu salário atual é {}. Você teve ajuste de {} % com um percentaul de {} e agora seu sálario é de {}".format(salario, aumento,conta, salario_novo))
